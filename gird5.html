@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display:grid;
+            grid-template-columns: 1fr 1fr ;
+            
+        }
+        .container div{
+            text-align: center;
+            font-size: 25px;
+            color: white;
+        }
+        .box1{
+            grid-column: 1/3;
+            background-color: brown;
+        }
+        .box2{
+            grid-row: 2/4;
+            background-color: beige;
+        }
+        .box3{
+            grid-column: 1/3;
+            background-color: blanchedalmond;
+        }
+        .menu{
+            background-color: blue;
+        }
+        .menu2{
+            background-color: cornsilk;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">Header</div>
+        <div class="box2">sider bar</div>
+        
+        <div class="menu">menu</div>
+        <div class="menu2">menu2</div>
+
+        <div class="box3">Footer</div>
+        
+    </div>
+</body>
+</html>

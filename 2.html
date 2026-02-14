@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+            margin: auto;
+        }
+        th,td{
+            border:2px solid black;
+            text-align: center;
+        }
+        th{
+            background-color: lightblue;
+        }
+        .AA{
+            background-color: lightgreen;
+        }
+        .A{
+            background-color: azure;
+        }
+        .ea{
+            background-color: azure;
+            margin: auto;
+            box-shadow:1px 1px 1px grey;
+
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;text-decoration: underline;">University Student Performance Dashboard</h2>
+    <table>
+        <caption style="text-decoration: underline;">Department Report 2025</caption>
+        <thead>
+            <tr>
+            <th>DEPARTMENT</th>
+            <th>STUDENT NAME</th>
+            <th>MARKS(OUT OF 100)</th>
+            <th>GRADE</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">Computer Science</td>
+                <td class="AA">Adarsh</td>
+                <td class="AA">95</td>
+                <td class="AA">A+</td>
+            </tr>
+            <tr>
+                <td class="A">Riya</td> 
+                <td class="A">89</td>
+                <td class="A">A</td>
+            </tr>
+            <tr>
+                <td class="AA">Sam</td>
+                <td class="AA">92</td>
+                <td class="AA">A+</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Mechanical</td>
+                <td class="A">Aarav</td>
+                <td class="A">85</td>
+                <td class="A">B+</td>
+            </tr>
+            <tr>
+                <td>Sneha</td>
+                <td>88</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                <table style="margin-top: 20px;margin-bottom: 20px;" class="ea" >
+                    <caption>Extra Activities</caption>
+                    <thead>
+                        <tr>
+                        <th>Event Name</th>
+                        <th>Participation Year</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Coding Completion</td>
+                            <td>2024</td>
+                        </tr>
+                        <tr>
+                            <td>Hackathon</td>
+                            <td>2025</td>
+                        </tr>
+                        <tr>
+                            <td>Cultural Fest</td>
+                            <td>2023</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td>89.8</td>
+                <td>Average Marks</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

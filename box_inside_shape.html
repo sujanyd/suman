@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width:2000px;
+            height: 500px;
+            background-color: bisque;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .box2{
+            width:300px;
+            height: 300px;
+            background-color: brown;
+        }
+        .box3{
+            width:300px;
+            height: 300px;
+            background-color: brown;
+        }
+        .box4{
+            width:300px;
+            height: 300px;
+            background-color: brown;
+        }
+        .squ{
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            position: relative;
+            top: 100px;
+            left: 100px;
+            animation: spin 2s ease-in-out infinite alternate;
+        }
+        .circle{
+            width: 200px;
+            height: 200px;
+            background-color:  white ;
+            border: 7px dashed black;
+            border-radius: 50%;
+            position: relative;
+            top: 50px;
+            left: 50px;
+            animation: spin 2s ease-in-out infinite alternate;
+        }
+        .triangle{
+            width: 0;
+            height: 0;
+            border-left: 115px solid transparent;
+            border-right: 115px solid transparent;
+            border-bottom: 115px solid rgb(255, 255, 255);
+            position: relative;
+            top: 80px;
+            left: 40px;
+            animation: spin 2s ease-in-out infinite alternate;
+        }
+        @keyframes spin{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+                
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="box1">
+        <div class="box2">
+            <div class="squ"></div>
+        </div>
+        <div class="box3">
+            <div class="circle">
+                
+            </div>
+        </div>
+        <div class="box4">
+            <div class="triangle"></div>
+        </div>
+    </div>
+    
+</body>
+</html>

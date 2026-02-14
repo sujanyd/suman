@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding:0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            
+            background-color: blue;
+            color: white;
+            position: relative;
+            animation: moveBox 4s ease-in-out infinite ;
+
+        }
+        @keyframes moveBox{
+            /* from{
+                top: 0px;
+                left: 0px;
+            }
+            to{
+                top:0px;
+                left: 300px;
+            } */
+             0%{
+                top: 0px;
+                left:0px;
+                background-color: red;
+                
+             }
+             25%{
+                top: 0px;
+                left:300px;
+                background-color: rgb(153, 125, 90);
+                
+             }
+             50%{
+                top: 300px;
+                left:300px;
+                background-color: rgb(31, 41, 22);
+                
+
+             }
+             75%{
+                top: 300px;
+                left:0px;
+                background-color: darkgreen;
+                
+             }
+             100%{
+                top: 0px;
+                left:0px;
+                background-color: dimgray;
+               
+             }
+
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="box">sujan</div>
+    
+</body>
+</html>

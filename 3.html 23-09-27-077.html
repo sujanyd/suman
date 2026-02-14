@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label{
+            display: block;
+            margin-top: 10px;
+            font-weight: 700;
+        }
+        .form-container{
+            background-color:rgb(242, 242, 242);
+            padding: 20px;
+        }
+        input,select{
+            width:300px;
+            padding: 12px;
+            border:1px solid red(204,204,204);
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        #submit{
+            background-color: rgb(76, 175, 80);
+            color: rgb(255, 255, 255);
+            padding:12px 20px;
+            display: block;
+            border: 0px none rgb(255, 255, 255);
+        }
+        #submit:hover{
+            background-color: rgb(14, 108, 108);
+            color:rgb(31, 15, 3);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>College Anniversary Application Form</h1>
+    <form class="form-container">
+        <label for="name">Name:</label><br/>
+        <input name="name" type="text" id="name" required />
+        <br/>
+        <br/>
+        <label for="email">Email:</label><br/>
+        <input type="email" name="email" id="email" required />
+        <br/>
+        <br/>
+        <label for="phone">Phone:</label><br/>
+        <input type="number" name="number" id="number" required />
+        <br/>
+        <br/>
+        <label for="number">Number of Guests:</label><br/>
+        <input type="number" name="number" id="guests" required />
+        <br/>
+        <br/>
+        <label for="text">Will you attend the ceremony?</label><br/>
+        <select name="text">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        <br/>
+        <br/>
+        <input type="submit" id="submit" value="Submit">
+    </form>
+    
+</body>
+</html>

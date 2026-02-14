@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .container div{
+            border: 2px solid black;
+            background-color: bisque;
+            font-size: 25px;
+            text-align: center;
+        }
+        .box1 {
+            grid-column: 1/4;
+        }
+        .box4{
+            grid-column: 1/4;
+        }
+        .box3{
+            grid-column: 2/4;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <h1>My Header</h1>
+        </div>
+        <div class="box2">
+            <a href="https://my.newtonschool.co/course/ocpr627rea6n/details">Newton</a>
+            <a href="https://my.newtonschool.co/lecture/z041it0kcv2m/live">Newton lecture</a>
+            <a href="https://www.scaler.com/school-of-technology/">Scaler</a>
+        </div>
+        <div class="box3">
+            <h2>Lorem ipsum</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In placeat autem, ea voluptas tempora repudiandae. Asperiores doloremque earum sint laudantium aliquid consectetur officia facere. Repudiandae quibusdam iste iusto suscipit officia?</p>
+        </div>
+        <div class="box4">
+            <h2>footer</h2>
+        </div>
+    </div>
+    
+</body>
+</html>

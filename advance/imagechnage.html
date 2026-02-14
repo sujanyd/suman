@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .dot {
+  width: 30px;
+  height: 6px;
+  background: #ccc;
+  margin: 0 5px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.dot.active {
+  background: black;
+}}
+    </style>
+</head>
+<body>
+    
+
+<div class="banner">
+  <div class="banner-content">
+    <h2 id="title">Mattress</h2>
+    <h1 id="price">From ₹2,999</h1>
+    <p id="desc">Wakefit, Sleepwell & more</p>
+  </div>
+
+  <div class="banner-image">
+    <img id="bannerImg" src="img1.png" alt="">
+  </div>
+</div>
+
+<div class="dots">
+  <span class="dot active"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+<div class="dots">
+  <span></span>
+  <span></span>
+  <span class="active"></span>
+  <span></span>
+  <span></span>
+</div>
+<script>
+    
+const slides = [
+  {
+    img: "https://picsum.photos/200",
+    title: "Mattress",
+    price: "From ₹2,999",
+    desc: "Wakefit, Sleepwell & more"
+  },
+  {
+    img: "https://picsum.photos/200",
+    title: "Sofa",
+    price: "From ₹7,999",
+    desc: "Wooden, Recliner & more"
+  },
+  {
+    img: "https://picsum.photos/200",
+    title: "TV",
+    price: "From ₹12,999",
+    desc: "Samsung, LG & more"
+  }
+];
+
+let index = 0;
+
+const bannerImg = document.getElementById("bannerImg");
+const title = document.getElementById("title");
+const price = document.getElementById("price");
+const desc = document.getElementById("desc");
+const dots = document.querySelectorAll(".dot");
+
+function changeSlide() {
+  index = (index + 1) % slides.length;
+
+  bannerImg.src = slides[index].img;
+  title.innerText = slides[index].title;
+  price.innerText = slides[index].price;
+  desc.innerText = slides[index].desc;
+
+  dots.forEach(dot =>dot.classList.remove("active"));
+  dots[index].classList.add("active");
+}
+
+setInterval(changeSlide, 3000); // ⏱ change every 3 seconds
+</script>
+
+
+
+    
+</body>
+</html>

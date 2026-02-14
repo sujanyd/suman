@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .test{
+            width: 100px;
+            height: 100px;
+            
+            color: white;
+            position: relative;
+            border:10px dashed black;
+            border-radius: 50%;
+            animation: move  2s linear infinite ;
+            
+        }
+        @keyframes move {
+            0%{
+                transform: rotate(0deg);
+                top:0px;
+                left:0px;
+            }
+            100%{
+                transform: rotate(360deg);
+                 top:0px;
+                left: 200px;
+
+            }
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="test">
+        
+    
+    </div>
+    
+</body>
+</html>

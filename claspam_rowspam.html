@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-decoration: underline;
+            text-align: center;
+            color: blueviolet;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        h3{
+            text-align: center;
+            color: blueviolet;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        table,th,td{
+            border: 2px solid black;
+            border-collapse: collapse;
+            margin-left:5% ;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        th,td{
+            padding: 15px;
+            width:30%;
+            
+        }
+        .a{
+            background-color: rgb(237, 196, 95);
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>University Student Performance Dashboard</h1>
+    <h3>Department Report - 2025</h3>
+    <table>
+        <tr style="background-color: blueviolet; color: white; ">
+            <th>DEPARTMENT</th>
+            <th>STUDENTS NAME</th>
+            <th>MARKS (out of 100)</th>
+            <th>GRADE</th>
+        </tr>
+        <tr>
+            <td rowspan="3" class="a">Computer Science</td>
+            <td>Adarsh</td>
+            <td>95</td>
+            <td>A+</td>
+        </tr>
+        <tr>
+            <td>Riya</td>
+            <td>89</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>Sam</td>
+            <td>92</td>
+            <td>A+</td>
+        </tr>
+        <tr>
+            <td rowspan="2" class="a">Mechanical</td>
+            <td>Aarav</td>
+            <td>85</td>
+            <td>B+</td>
+        </tr>
+        <tr>
+            <td>Sneha</td>
+            <td>88</td>
+            <td>A</td>
+        </tr>
+        
+        
+        <tr>
+                <td colspan="4">
+                <table style="margin-left: 30%;" class="ea" >
+                    <caption class="a" >Extra Activities</caption>
+                    <thead>
+                        <tr>
+                        <th>Event Name</th>
+                        <th>Participation Year</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Coding Completion</td>
+                            <td>2024</td>
+                        </tr>
+                        <tr>
+                            <td>Hackathon</td>
+                            <td>2025</td>
+                        </tr>
+                        <tr>
+                            <td>Cultural Fest</td>
+                            <td>2023</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </td>
+        <tr>
+            <th colspan="2"></th>
+            <th>89.8</th>
+            <th>Average Marks</th>
+        </tr>    
+        
+    </table>
+    
+</body>
+</html>

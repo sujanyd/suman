@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini Info Card Page</title>
+  <style>
+    /* Basic Page Setup */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f7f8fc;
+      color: #333;
+    }
+
+    /* Sticky Header */
+    header {
+      position: sticky;
+      top: 0;
+      background-color: #4a90e2;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 1.5rem;
+      z-index: 100;
+    }
+
+    /* Center Profile Card */
+    .card {
+      position: relative;
+      width: 300px;
+      margin: 100px auto;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    .card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .card h2 {
+      margin: 15px 0 5px;
+      color: #222;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    /* Online Badge (Absolute) */
+    .badge {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      background-color: #28a745;
+      color: white;
+      font-size: 0.8rem;
+      padding: 5px 10px;
+      border-radius: 12px;
+    }
+
+    /* Decorative Elements (Absolute) */
+    .circle {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.3;
+    }
+
+    .circle.one {
+      width: 60px;
+      height: 60px;
+      background-color: #ffcc00;
+      top: -20px;
+      left: -30px;
+    }
+
+    .circle.two {
+      width: 40px;
+      height: 40px;
+      background-color: #4a90e2;
+      bottom: -15px;
+      right: -25px;
+    }
+
+    /* Fixed Help Button */
+    .help-btn {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background-color: #4a90e2;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      font-size: 1rem;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s;
+    }
+
+    .help-btn:hover {
+      transform: scale(1.1);
+    }
+
+    /* Static Footer */
+    footer {
+      position: static;
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 150px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sticky Header -->
+  <header>My Info Page</header>
+
+  <!-- Profile Card -->
+  <div class="card">
+    <span class="badge">Online</span>
+    <div class="circle one"></div>
+    <div class="circle two"></div>
+    <img src="https://via.placeholder.com/100" alt="Profile Picture" />
+    <h2>Alex Johnson</h2>
+    <p>Web Developer | Tech Enthusiast | Designer</p>
+  </div>
+
+  <!-- Fixed Help Button -->
+  <button class="help-btn">Help</button>
+
+  <!-- Static Footer -->
+  <footer>End of Page</footer>
+
+</body>
+</html>
